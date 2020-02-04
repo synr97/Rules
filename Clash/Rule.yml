@@ -1,5 +1,5 @@
 # Ads in Video apps
-
+Rule:
 # > iqiyi & pps
 - DOMAIN-SUFFIX,a.ckm.iqiyi.com,AdBlock
 - DOMAIN-SUFFIX,ad.m.iqiyi.com,AdBlock
