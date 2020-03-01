@@ -1,5 +1,7 @@
 # Ads in Video apps
 Rule:
+# Ads in Video apps
+
 # > iqiyi & pps
 - DOMAIN-SUFFIX,a.ckm.iqiyi.com,AdBlock
 - DOMAIN-SUFFIX,ad.m.iqiyi.com,AdBlock
@@ -254,9 +256,7 @@ Rule:
 
 
 
-# REJECT
-
-# > Client
+# Ads in apps
 - DOMAIN-KEYWORD,admaster,AdBlock
 - DOMAIN-KEYWORD,admdfs,AdBlock
 - DOMAIN-KEYWORD,adnewnc,AdBlock
@@ -1392,7 +1392,6 @@ Rule:
 - DOMAIN-SUFFIX,afpimages.eastday.com,AdBlock
 - DOMAIN-SUFFIX,afpmm.alicdn.com,AdBlock
 - DOMAIN-SUFFIX,afptrack.csbew.com,AdBlock
-- DOMAIN-SUFFIX,afs.googlesyndication.com,AdBlock
 - DOMAIN-SUFFIX,ag.nukefans.net,AdBlock
 - DOMAIN-SUFFIX,agenda.complex.com,AdBlock
 - DOMAIN-SUFFIX,ag-gb.marketgid.com,AdBlock
@@ -5862,7 +5861,6 @@ Rule:
 - DOMAIN-SUFFIX,page.xywy.com,AdBlock
 - DOMAIN-SUFFIX,pagead.google.com,AdBlock
 - DOMAIN-SUFFIX,pagead.l.google.com,AdBlock
-- DOMAIN-SUFFIX,pagead2.googlesyndication.com,AdBlock
 - DOMAIN-SUFFIX,pagead-tpc.l.google.com,AdBlock
 - DOMAIN-SUFFIX,pagechoice.com,AdBlock
 - DOMAIN-SUFFIX,pagechoice.net,AdBlock
@@ -7218,7 +7216,6 @@ Rule:
 - DOMAIN-SUFFIX,toutiao.2haha.com,AdBlock
 - DOMAIN-SUFFIX,toutiao.jxnews.com.cn,AdBlock
 - DOMAIN-SUFFIX,tp.sgcn.com,AdBlock
-- DOMAIN-SUFFIX,tpc.googlesyndication.com,AdBlock
 - DOMAIN-SUFFIX,tpe163.com,AdBlock
 - DOMAIN-SUFFIX,tpush.html5.qq.com,AdBlock
 - DOMAIN-SUFFIX,tqd.ntpddq.com,AdBlock
@@ -7511,7 +7508,6 @@ Rule:
 - DOMAIN-SUFFIX,video.cooguo.com,AdBlock
 - DOMAIN-SUFFIX,video.ureport.push.qq.com,AdBlock
 - DOMAIN-SUFFIX,video.wap.mpush.qq.com,AdBlock
-- DOMAIN-SUFFIX,video-ad-stats.googlesyndication.com,AdBlock
 - DOMAIN-SUFFIX,videondun.com,AdBlock
 - DOMAIN-SUFFIX,videopush.baidu.com,AdBlock
 - DOMAIN-SUFFIX,viglink.com,AdBlock
@@ -8464,6 +8460,10 @@ Rule:
 # > letv
 - DOMAIN-SUFFIX,api.mob.app.letv.com,AsianTV
 
+# > MOO
+# - USER-AGENT,MOO*,AsianTV
+# - USER-AGENT,TencentMidasConnect*,AsianTV
+
 # > Tencent Video
 - DOMAIN-SUFFIX,vv.video.qq.com,AsianTV
 
@@ -8477,12 +8477,15 @@ Rule:
 - DOMAIN-SUFFIX,go.com,GlobalTV
 
 # > Abema TV
+# - USER-AGENT,AbemaTV*,GlobalTV
 - DOMAIN-SUFFIX,abema.io,GlobalTV
 - DOMAIN-SUFFIX,akamaized.net,GlobalTV
 - DOMAIN-SUFFIX,ameba.jp,GlobalTV
 - DOMAIN-SUFFIX,hayabusa.io,GlobalTV
 
 # > Amazon Prime Video
+# - USER-AGENT,InstantVideo.US*,GlobalTV
+# - USER-AGENT,Prime%20Video*,GlobalTV
 - DOMAIN-SUFFIX,aiv-cdn.net,GlobalTV
 - DOMAIN-SUFFIX,amazonaws.com,GlobalTV
 - DOMAIN-SUFFIX,amazonvideo.com,GlobalTV
@@ -8494,11 +8497,13 @@ Rule:
 - DOMAIN-SUFFIX,tv.apple.com,GlobalTV
 
 # > Bahamut
+# - USER-AGENT,Anime*,GlobalTV
 - DOMAIN-SUFFIX,bahamut.com.tw,GlobalTV
 - DOMAIN-SUFFIX,gamer.com.tw,GlobalTV
 - DOMAIN-SUFFIX,hinet.net,GlobalTV
 
 # > BBC
+# - USER-AGENT,BBCiPlayer*,GlobalTV
 - DOMAIN-KEYWORD,bbcfmt,GlobalTV
 - DOMAIN-KEYWORD,co.uk,GlobalTV
 - DOMAIN-KEYWORD,uk-live,GlobalTV
@@ -8509,9 +8514,11 @@ Rule:
 - DOMAIN-SUFFIX,bbci.co.uk,GlobalTV
 
 # > CHOCO TV
+# - USER-AGENT,TwDramas*,GlobalTV
 - DOMAIN-SUFFIX,chocotv.com.tw,GlobalTV
 
 # > Disney Plus
+# - USER-AGENT,Disney*,GlobalTV
 - DOMAIN,cdn.registerdisney.go.com,GlobalTV
 - DOMAIN-SUFFIX,disneyplus.com,GlobalTV
 - DOMAIN-SUFFIX,disney-plus.net,GlobalTV
@@ -8520,6 +8527,7 @@ Rule:
 - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,GlobalTV
 
 # > Now E
+# - USER-AGENT,PCCW*,GlobalTV
 - DOMAIN-KEYWORD,nowe,GlobalTV
 - DOMAIN,bcbolthboa-a.akamaihd.net,GlobalTV
 - DOMAIN-SUFFIX,nowe.com,GlobalTV
@@ -8530,6 +8538,8 @@ Rule:
 - DOMAIN-SUFFIX,helpshift.com,GlobalTV
 
 # > Fox+
+# - USER-AGENT,FOX%20NOW*,GlobalTV
+# - USER-AGENT,FOXPlus*,GlobalTV
 - DOMAIN-KEYWORD,foxplus,GlobalTV
 - DOMAIN-SUFFIX,config.fox.com,GlobalTV
 - DOMAIN-SUFFIX,emome.net,GlobalTV
@@ -8545,6 +8555,7 @@ Rule:
 - DOMAIN-SUFFIX,urlload.net,GlobalTV
 
 # > HBO && HBO Go
+# - USER-AGENT,HBO%20NOW*,GlobalTV
 - DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,GlobalTV
 - DOMAIN-SUFFIX,hbo.com,GlobalTV
 - DOMAIN-SUFFIX,hboasia.com,GlobalTV
@@ -8553,6 +8564,7 @@ Rule:
 - DOMAIN-SUFFIX,hbogoasia.hk,GlobalTV
 
 # > Hulu
+# - USER-AGENT,Hulu*,GlobalTV
 - DOMAIN-SUFFIX,happyon.jp,GlobalTV
 - DOMAIN-SUFFIX,hulu.com,GlobalTV
 - DOMAIN-SUFFIX,huluim.com,GlobalTV
@@ -8562,34 +8574,27 @@ Rule:
 - DOMAIN-SUFFIX,imkan.tv,GlobalTV
 
 # > JOOX
+# - USER-AGENT,WeMusic*,GlobalTV
+# - USER-AGENT,JOOX*,GlobalTV
 - DOMAIN-SUFFIX,joox.com,GlobalTV
 
 # > MytvSUPER
+# - USER-AGENT,mytv*,GlobalTV
 - DOMAIN-KEYWORD,nowtv100,GlobalTV
 - DOMAIN-KEYWORD,rthklive,GlobalTV
 - DOMAIN-SUFFIX,mytvsuper.com,GlobalTV
 - DOMAIN-SUFFIX,tvb.com,GlobalTV
 
-# > Netflix
-- DOMAIN-SUFFIX,netflix.com,GlobalTV
-- DOMAIN-SUFFIX,netflix.net,GlobalTV
-- DOMAIN-SUFFIX,nflxext.com,GlobalTV
-- DOMAIN-SUFFIX,nflximg.com,GlobalTV
-- DOMAIN-SUFFIX,nflximg.net,GlobalTV
-- DOMAIN-SUFFIX,nflxso.net,GlobalTV
-- DOMAIN-SUFFIX,nflxvideo.net,GlobalTV
-
 # > Pandora
 - DOMAIN-SUFFIX,pandora.com,GlobalTV
 
 # > Sky GO
+# - USER-AGENT,skygo*,GlobalTV
 - DOMAIN-SUFFIX,sky.com,GlobalTV
 - DOMAIN-SUFFIX,skygo.co.nz,GlobalTV
 
-# > Spotify
-- DOMAIN-KEYWORD,spotify,GlobalTV
-- DOMAIN-SUFFIX,scdn.co,GlobalTV
-- DOMAIN-SUFFIX,spoti.fi,GlobalTV
+# > SoundCloud
+# - USER-AGENT,SoundCloud*,GlobalTV
 
 # > viuTV
 - DOMAIN-SUFFIX,cloudfront.net,GlobalTV
@@ -8602,6 +8607,21 @@ Rule:
 - DOMAIN-SUFFIX,googlevideo.com,GlobalTV
 - DOMAIN-SUFFIX,gvt2.com,GlobalTV
 - DOMAIN-SUFFIX,youtu.be,GlobalTV
+
+# > Netflix
+- DOMAIN-SUFFIX,netflix.com,Netflix
+- DOMAIN-SUFFIX,netflix.net,Netflix
+- DOMAIN-SUFFIX,nflxext.com,Netflix
+- DOMAIN-SUFFIX,nflximg.com,Netflix
+- DOMAIN-SUFFIX,nflximg.net,Netflix
+- DOMAIN-SUFFIX,nflxso.net,Netflix
+- DOMAIN-SUFFIX,nflxvideo.net,Netflix
+
+# > Spotify
+# - USER-AGENT,*Spotify*,Spotify
+- DOMAIN-KEYWORD,spotify,Spotify
+- DOMAIN-SUFFIX,scdn.co,Spotify
+- DOMAIN-SUFFIX,spoti.fi,Spotify
 
 
 # > Telegram
@@ -8634,27 +8654,58 @@ Rule:
 
 
 # > NeteaseMusic
+# - USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90,Netease Music
+# - USER-AGENT,NeteaseMusic*,Netease Music
 - DOMAIN-SUFFIX,music.126.net,Netease Music
 - DOMAIN-SUFFIX,music.163.com,Netease Music
-- IP-CIDR,39.105.63.80/32,Netease Music
-- IP-CIDR,45.254.48.1/32,Netease Music
-- IP-CIDR,47.100.127.239/32,Netease Music
-- IP-CIDR,59.111.160.195/32,Netease Music
-- IP-CIDR,59.111.160.197/32,Netease Music
-- IP-CIDR,59.111.181.35/32,Netease Music
-- IP-CIDR,59.111.181.38/32,Netease Music
-- IP-CIDR,59.111.181.60/32,Netease Music
-- IP-CIDR,101.71.154.241/32,Netease Music
-- IP-CIDR,103.126.92.132/32,Netease Music
-- IP-CIDR,103.126.92.133/32,Netease Music
-- IP-CIDR,112.13.119.17/32,Netease Music
-- IP-CIDR,112.13.122.1/32,Netease Music
-- IP-CIDR,115.236.118.33/32,Netease Music
-- IP-CIDR,115.236.121.1/32,Netease Music
-- IP-CIDR,118.24.63.156/32,Netease Music
-- IP-CIDR,193.112.159.225/32,Netease Music
-- IP-CIDR,223.252.199.66/32,Netease Music
-- IP-CIDR,223.252.199.67/32,Netease Music
+
+
+
+# > Dler Cloud
+- DOMAIN,dler.cloud,DIRECT
+
+# > Google
+- DOMAIN-KEYWORD,mtalk.google.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+
+# > Steam
+# - USER-AGENT,Steam*,DIRECT
+- DOMAIN-SUFFIX,steamcontent.com,DIRECT
+
+# > Private Tracker
+- DOMAIN-SUFFIX,awesome-hd.me,DIRECT
+- DOMAIN-SUFFIX,broadcasthe.net,DIRECT
+- DOMAIN-SUFFIX,chdbits.co,DIRECT
+- DOMAIN-SUFFIX,classix-unlimited.co.uk,DIRECT
+- DOMAIN-SUFFIX,empornium.me,DIRECT
+- DOMAIN-SUFFIX,gazellegames.net,DIRECT
+- DOMAIN-SUFFIX,hdchina.org,DIRECT
+- DOMAIN-SUFFIX,hdsky.me,DIRECT
+- DOMAIN-SUFFIX,icetorrent.org,DIRECT
+- DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
+- DOMAIN-SUFFIX,keepfrds.com,DIRECT
+- DOMAIN-SUFFIX,madsrevolution.net,DIRECT
+- DOMAIN-SUFFIX,m-team.cc,DIRECT
+- DOMAIN-SUFFIX,nanyangpt.com,DIRECT
+- DOMAIN-SUFFIX,ncore.cc,DIRECT
+- DOMAIN-SUFFIX,open.cd,DIRECT
+- DOMAIN-SUFFIX,ourbits.club,DIRECT
+- DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
+- DOMAIN-SUFFIX,privatehd.to,DIRECT
+- DOMAIN-SUFFIX,redacted.ch,DIRECT
+- DOMAIN-SUFFIX,springsunday.net,DIRECT
+- DOMAIN-SUFFIX,tjupt.org,DIRECT
+- DOMAIN-SUFFIX,totheglory.im,DIRECT
+
+# > Accelerate direct sites
+- DOMAIN-KEYWORD,announce,DIRECT
+- DOMAIN-KEYWORD,torrent,DIRECT
+- DOMAIN-KEYWORD,tracker,DIRECT
+- DOMAIN-SUFFIX,smtp,DIRECT
+# - URL-REGEX,(Subject|HELO|SMTP),DIRECT
+# - URL-REGEX,(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com,DIRECT
+# - URL-REGEX,(.+\.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan)\.(cn|com),DIRECT
+# - URL-REGEX,(.+\.)?(torrent|announce\.php\?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|sandai|Thunder|XLLiveUD|xunlei)(\..+)?,DIRECT
 
 
 
@@ -8668,14 +8719,10 @@ Rule:
 - DOMAIN-SUFFIX,nhncorp.jp,Proxy
 
 # > Microsoft
+# - USER-AGENT,OneDrive*,Proxy
 - DOMAIN-KEYWORD,microsoft,Proxy
-- DOMAIN-SUFFIX,hotmail.com,Proxy
-- DOMAIN-SUFFIX,live.com,Proxy
-- DOMAIN-SUFFIX,live.net,Proxy
-- DOMAIN-SUFFIX,msn.com,Proxy
-- DOMAIN-SUFFIX,office.com,Proxy
-- DOMAIN-SUFFIX,office.net,Proxy
-- DOMAIN-SUFFIX,outlook.com,Proxy
+- DOMAIN-SUFFIX,onedrive.live.com,Proxy
+- DOMAIN-SUFFIX,skype.com,Proxy
 
 # > Spark
 - DOMAIN-SUFFIX,api.amplitude.com,Proxy
@@ -8684,11 +8731,11 @@ Rule:
 - DOMAIN-SUFFIX,smartmailcloud.com,Proxy
 
 # > Steam
-- DOMAIN-SUFFIX,fanatical.com,Proxy
-- DOMAIN-SUFFIX,humblebundle.com,Proxy
-- DOMAIN-SUFFIX,steamcommunity.com,Proxy
-- DOMAIN-SUFFIX,steampowered.com,Proxy
-- DOMAIN-SUFFIX,steamstatic.com,Proxy
+- DOMAIN-SUFFIX,fanatical.com,Steam
+- DOMAIN-SUFFIX,humblebundle.com,Steam
+- DOMAIN-SUFFIX,steamcommunity.com,Steam
+- DOMAIN-SUFFIX,steampowered.com,Steam
+- DOMAIN-SUFFIX,steamstatic.com,Steam
 
 # > Top blocked sites
 - DOMAIN-SUFFIX,2o7.net,Proxy
@@ -8721,6 +8768,7 @@ Rule:
 - DOMAIN-SUFFIX,aol.com,Proxy
 - DOMAIN-SUFFIX,aolcdn.com,Proxy
 - DOMAIN-SUFFIX,api.mixpanel.com,Proxy
+- DOMAIN-SUFFIX,api.termius.com,Proxy
 - DOMAIN-SUFFIX,api.tiktokv.com,Proxy
 - DOMAIN-SUFFIX,api.urbandictionary.com,Proxy
 - DOMAIN-SUFFIX,apigee.com,Proxy
@@ -9058,7 +9106,6 @@ Rule:
 - DOMAIN-SUFFIX,simp.ly,Proxy
 - DOMAIN-SUFFIX,simplenote.com,Proxy
 - DOMAIN-SUFFIX,sketchappsources.com,Proxy
-- DOMAIN-SUFFIX,skype.com,Proxy
 - DOMAIN-SUFFIX,slack.com,Proxy
 - DOMAIN-SUFFIX,slack-edge.com,Proxy
 - DOMAIN-SUFFIX,slack-msgs.com,Proxy
@@ -9177,6 +9224,7 @@ Rule:
 - DOMAIN-SUFFIX,ustream.tv,Proxy
 - DOMAIN-SUFFIX,v.gd,Proxy
 - DOMAIN-SUFFIX,v2ex.co,Proxy
+- DOMAIN-SUFFIX,v2ex.com,Proxy
 - DOMAIN-SUFFIX,v2ray.com,Proxy
 - DOMAIN-SUFFIX,van001.com,Proxy
 - DOMAIN-SUFFIX,vanpeople.com,Proxy
@@ -9324,13 +9372,6 @@ Rule:
 - DOMAIN-SUFFIX,webmproject.org,Proxy
 - DOMAIN-SUFFIX,webrtc.org,Proxy
 
-# > V2EX
-- DOMAIN-SUFFIX,v2ex.com,Proxy
-
-
-- DOMAIN-KEYWORD,dlercloud,Proxy
-
-
 # > Amazon
 - IP-CIDR,13.32.0.0/16,Proxy
 - IP-CIDR,13.33.0.0/16,Proxy
@@ -9415,6 +9456,19 @@ Rule:
 - DOMAIN-SUFFIX,battlenet.com,Domestic
 - DOMAIN-SUFFIX,blizzard.com,Domestic
 
+# > Microsoft
+- DOMAIN-SUFFIX,azure.com,Domestic
+- DOMAIN-SUFFIX,hotmail.com,Domestic
+- DOMAIN-SUFFIX,live.com,Domestic
+- DOMAIN-SUFFIX,live.net,Domestic
+- DOMAIN-SUFFIX,msn.com,Domestic
+- DOMAIN-SUFFIX,office.com,Domestic
+- DOMAIN-SUFFIX,office.net,Domestic
+- DOMAIN-SUFFIX,outlook.com,Domestic
+- DOMAIN-SUFFIX,windows.com,Domestic
+- DOMAIN-SUFFIX,windows.net,Domestic
+- DOMAIN-SUFFIX,windowsupdate.com,Domestic
+
 # > Prior
 - DOMAIN,client.amplifi.com,Domestic
 - DOMAIN,ip.bjango.com,Domestic
@@ -9428,9 +9482,6 @@ Rule:
 - DOMAIN-SUFFIX,sony.com,Domestic
 - DOMAIN-SUFFIX,sonyentertainmentnetwork.com,Domestic
 
-# > Steam
-- DOMAIN-SUFFIX,steamcontent.com,Domestic
-
 # > TeamViewer
 - IP-CIDR,185.188.32.0/24,Domestic
 - IP-CIDR,185.188.33.0/24,Domestic
@@ -9441,7 +9492,6 @@ Rule:
 - IP-CIDR6,2a0b:b582::/48,Domestic
 - IP-CIDR6,2a0b:b583::/48,Domestic
 
-# Domestic
 - DOMAIN-SUFFIX,12306.cn,Domestic
 - DOMAIN-SUFFIX,12306.com,Domestic
 - DOMAIN-SUFFIX,126.net,Domestic
@@ -9461,14 +9511,15 @@ Rule:
 - DOMAIN-SUFFIX,air-matters.io,Domestic
 - DOMAIN-SUFFIX,aixifan.com,Domestic
 - DOMAIN-SUFFIX,akadns.net,Domestic
+- DOMAIN-SUFFIX,alibabacloud.com,Domestic
 - DOMAIN-SUFFIX,alicdn.com,Domestic
 - DOMAIN-SUFFIX,alipay.com,Domestic
 - DOMAIN-SUFFIX,alipayobjects.com,Domestic
 - DOMAIN-SUFFIX,aliyun.com,Domestic
+- DOMAIN-SUFFIX,aliyuncs.com,Domestic
 - DOMAIN-SUFFIX,amap.com,Domestic
 - DOMAIN-SUFFIX,apache.org,Domestic
 - DOMAIN-SUFFIX,api.crisp.chat,Domestic
-- DOMAIN-SUFFIX,api.termius.com,Domestic
 - DOMAIN-SUFFIX,appshike.com,Domestic
 - DOMAIN-SUFFIX,appstore.com,Domestic
 - DOMAIN-SUFFIX,autonavi.com,Domestic
@@ -9574,7 +9625,6 @@ Rule:
 - DOMAIN-SUFFIX,mob.com,Domestic
 - DOMAIN-SUFFIX,moji.com,Domestic
 - DOMAIN-SUFFIX,moke.com,Domestic
-- DOMAIN-SUFFIX,mtalk.google.com,Domestic
 - DOMAIN-SUFFIX,mxhichina.com,Domestic
 - DOMAIN-SUFFIX,myqcloud.com,Domestic
 - DOMAIN-SUFFIX,myunlu.com,Domestic
@@ -9641,7 +9691,6 @@ Rule:
 - DOMAIN-SUFFIX,trello.com,Domestic
 - DOMAIN-SUFFIX,trellocdn.com,Domestic
 - DOMAIN-SUFFIX,totheglory.im,Domestic
-- DOMAIN-SUFFIX,tp.m-team.cc,Domestic
 - DOMAIN-SUFFIX,ttmeiju.com,Domestic
 - DOMAIN-SUFFIX,tudou.com,Domestic
 - DOMAIN-SUFFIX,udache.com,Domestic
@@ -9710,44 +9759,6 @@ Rule:
 
 
 
-- DOMAIN,dler.cloud,DIRECT
-
-# > Private Tracker
-- DOMAIN-SUFFIX,awesome-hd.me,DIRECT
-- DOMAIN-SUFFIX,broadcasthe.net,DIRECT
-- DOMAIN-SUFFIX,chdbits.co,DIRECT
-- DOMAIN-SUFFIX,classix-unlimited.co.uk,DIRECT
-- DOMAIN-SUFFIX,empornium.me,DIRECT
-- DOMAIN-SUFFIX,gazellegames.net,DIRECT
-- DOMAIN-SUFFIX,hdchina.org,DIRECT
-- DOMAIN-SUFFIX,hdsky.me,DIRECT
-- DOMAIN-SUFFIX,icetorrent.org,DIRECT
-- DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
-- DOMAIN-SUFFIX,keepfrds.com,DIRECT
-- DOMAIN-SUFFIX,madsrevolution.net,DIRECT
-- DOMAIN-SUFFIX,m-team.cc,DIRECT
-- DOMAIN-SUFFIX,nanyangpt.com,DIRECT
-- DOMAIN-SUFFIX,ncore.cc,DIRECT
-- DOMAIN-SUFFIX,open.cd,DIRECT
-- DOMAIN-SUFFIX,ourbits.club,DIRECT
-- DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
-- DOMAIN-SUFFIX,privatehd.to,DIRECT
-- DOMAIN-SUFFIX,redacted.ch,DIRECT
-- DOMAIN-SUFFIX,springsunday.net,DIRECT
-- DOMAIN-SUFFIX,tjupt.org,DIRECT
-- DOMAIN-SUFFIX,totheglory.im,DIRECT
-
-# > Accelerate direct sites
-- DOMAIN-KEYWORD,announce,DIRECT
-- DOMAIN-KEYWORD,torrent,DIRECT
-- DOMAIN-KEYWORD,tracker,DIRECT
-- DOMAIN-SUFFIX,smtp,DIRECT
-
-
-- IP-CIDR,1.1.1.1/24,DIRECT
-
-- DOMAIN-SUFFIX,smtp,DIRECT
-- DOMAIN-SUFFIX,local,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT
 - IP-CIDR,100.64.0.0/10,DIRECT
 - IP-CIDR,127.0.0.0/8,DIRECT
