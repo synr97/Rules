@@ -1,11 +1,3 @@
-# > UA
-USER-AGENT,%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5*
-USER-AGENT,AwemeI18n*
-USER-AGENT,Coinbase*
-USER-AGENT,Instagram*
-USER-AGENT,Resilio Sync*
-USER-AGENT,WhatsApp*
-
 # > Line
 DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,line.me
@@ -15,18 +7,18 @@ DOMAIN-SUFFIX,line-cdn.net
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,nhncorp.jp
 
+# > Sony
+DOMAIN-SUFFIX,playstation.com
+DOMAIN-SUFFIX,playstation.net
+DOMAIN-SUFFIX,playstationnetwork.com
+DOMAIN-SUFFIX,sony.com
+DOMAIN-SUFFIX,sonyentertainmentnetwork.com
+
 # > Spark
 DOMAIN-SUFFIX,api.amplitude.com
 DOMAIN-SUFFIX,app.smartmailcloud.com
 DOMAIN-SUFFIX,gate.hockeyapp.net
 DOMAIN-SUFFIX,smartmailcloud.com
-
-# > Steam
-DOMAIN-SUFFIX,fanatical.com
-DOMAIN-SUFFIX,humblebundle.com
-DOMAIN-SUFFIX,steamcommunity.com
-DOMAIN-SUFFIX,steampowered.com
-DOMAIN-SUFFIX,steamstatic.com
 
 # > Zooba
 USER-AGENT,battleroyale*
@@ -47,6 +39,8 @@ DOMAIN-SUFFIX,akamaihd.net
 DOMAIN-SUFFIX,airtable.com
 DOMAIN-SUFFIX,alfredapp.com
 DOMAIN-SUFFIX,allconnected.co
+DOMAIN-SUFFIX,amazon.co
+DOMAIN-SUFFIX,amazon.co.jp
 DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,amazonaws.com
 DOMAIN-SUFFIX,ampproject.com
@@ -61,7 +55,9 @@ DOMAIN-SUFFIX,angularjs.org
 DOMAIN-SUFFIX,anthonycalzadilla.com
 DOMAIN-SUFFIX,aol.com
 DOMAIN-SUFFIX,aolcdn.com
+DOMAIN-SUFFIX,apache.org
 DOMAIN-SUFFIX,api.mixpanel.com
+DOMAIN-SUFFIX,api.termius.com
 DOMAIN-SUFFIX,api.tiktokv.com
 DOMAIN-SUFFIX,api.urbandictionary.com
 DOMAIN-SUFFIX,apigee.com
@@ -115,6 +111,7 @@ DOMAIN-SUFFIX,box.net
 DOMAIN-SUFFIX,boxun.com
 DOMAIN-SUFFIX,cachefly.net
 DOMAIN-SUFFIX,cbc.ca
+DOMAIN-SUFFIX,cdn.angruo.com
 DOMAIN-SUFFIX,cdn.segment.com
 DOMAIN-SUFFIX,cdnst.net
 DOMAIN-SUFFIX,celestrak.com
@@ -128,6 +125,7 @@ DOMAIN-SUFFIX,chromercise.com
 DOMAIN-SUFFIX,chromestatus.com
 DOMAIN-SUFFIX,chromium.org
 DOMAIN-SUFFIX,cl.ly
+DOMAIN-SUFFIX,clien.net
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,cloudgarage.jp
@@ -199,7 +197,6 @@ DOMAIN-SUFFIX,fzlm.net
 DOMAIN-SUFFIX,g.co
 DOMAIN-SUFFIX,gabia.net
 DOMAIN-SUFFIX,garena.com
-DOMAIN-SUFFIX,gameloft.com
 DOMAIN-SUFFIX,geni.us
 DOMAIN-SUFFIX,get.how
 DOMAIN-SUFFIX,getcloudapp.com
@@ -231,11 +228,12 @@ DOMAIN-SUFFIX,gunsamerica.com
 DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,helpshift.com
-DOMAIN-SUFFIX,hinet.net
+DOMAIN-SUFFIX,hitun.io
 DOMAIN-SUFFIX,hockeyapp.net
 DOMAIN-SUFFIX,homedepot.com
 DOMAIN-SUFFIX,hootsuite.com
 DOMAIN-SUFFIX,howtoforge.com
+DOMAIN-SUFFIX,i-cable.com
 DOMAIN-SUFFIX,iam.soy
 DOMAIN-SUFFIX,icoco.com
 DOMAIN-SUFFIX,icons8.com
@@ -246,6 +244,7 @@ DOMAIN-SUFFIX,img.ly
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,imore.com
 DOMAIN-SUFFIX,ingress.com
+DOMAIN-SUFFIX,inoreader.com
 DOMAIN-SUFFIX,insder.co
 DOMAIN-SUFFIX,instapaper.com
 DOMAIN-SUFFIX,instructables.com
@@ -290,6 +289,7 @@ DOMAIN-SUFFIX,logmein.com
 DOMAIN-SUFFIX,macid.co
 DOMAIN-SUFFIX,macromedia.com
 DOMAIN-SUFFIX,macrumors.com
+DOMAIN-SUFFIX,mangaup.jp
 DOMAIN-SUFFIX,manhuaren.com
 DOMAIN-SUFFIX,marketwatch.com
 DOMAIN-SUFFIX,mashable.com
@@ -315,7 +315,9 @@ DOMAIN-SUFFIX,ndr.de
 DOMAIN-SUFFIX,netdna-cdn.com
 DOMAIN-SUFFIX,newipnow.com
 DOMAIN-SUFFIX,nextmedia.com
+DOMAIN-SUFFIX,nicovideo.jp
 DOMAIN-SUFFIX,nih.gov
+DOMAIN-SUFFIX,nimg.jp
 DOMAIN-SUFFIX,nintendo.com
 DOMAIN-SUFFIX,nintendo.net
 DOMAIN-SUFFIX,notion.so
@@ -329,7 +331,6 @@ DOMAIN-SUFFIX,nytimg.com
 DOMAIN-SUFFIX,nytstyle.com
 DOMAIN-SUFFIX,office365.com
 DOMAIN-SUFFIX,omnigroup.com
-DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,onenote.com
 DOMAIN-SUFFIX,ooyala.com
 DOMAIN-SUFFIX,openvpn.net
@@ -362,6 +363,7 @@ DOMAIN-SUFFIX,polymer-project.org
 DOMAIN-SUFFIX,popo.tw
 DOMAIN-SUFFIX,potato.im
 DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,rthk.hk
 DOMAIN-SUFFIX,prfct.co
 DOMAIN-SUFFIX,proxfree.com
 DOMAIN-SUFFIX,psiphon3.com
@@ -399,7 +401,6 @@ DOMAIN-SUFFIX,sidelinesnews.com
 DOMAIN-SUFFIX,simp.ly
 DOMAIN-SUFFIX,simplenote.com
 DOMAIN-SUFFIX,sketchappsources.com
-DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,slack.com
 DOMAIN-SUFFIX,slack-edge.com
 DOMAIN-SUFFIX,slack-msgs.com
@@ -468,6 +469,7 @@ DOMAIN-SUFFIX,torcn.com
 DOMAIN-SUFFIX,torrentprivacy.com
 DOMAIN-SUFFIX,torrentproject.se
 DOMAIN-SUFFIX,torrentz.eu
+DOMAIN-SUFFIX,tradingview.com
 DOMAIN-SUFFIX,traffichaus.com
 DOMAIN-SUFFIX,trakt.tv
 DOMAIN-SUFFIX,transparency.org
@@ -570,6 +572,7 @@ DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wn.com
 DOMAIN-SUFFIX,wordpress.com
 DOMAIN-SUFFIX,workflow.is
+DOMAIN-SUFFIX,workflowy.com
 DOMAIN-SUFFIX,worldcat.org
 DOMAIN-SUFFIX,wow.com
 DOMAIN-SUFFIX,wp.com
@@ -581,6 +584,7 @@ DOMAIN-SUFFIX,xclient.info
 DOMAIN-SUFFIX,xda-developers.com
 DOMAIN-SUFFIX,xeeno.com
 DOMAIN-SUFFIX,xiti.com
+DOMAIN-SUFFIX,xteko.com
 DOMAIN-SUFFIX,xuite.net
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,yahoo.com
@@ -607,6 +611,8 @@ DOMAIN-SUFFIX,zeutch.com
 DOMAIN-SUFFIX,zynamics.com
 
 # > Force some domains which are fucked by GFW while resolving DNS,or do not respect the system Proxy
+USER-AGENT,WhatsApp*
+
 DOMAIN-KEYWORD,appledaily
 DOMAIN-KEYWORD,beetalk
 DOMAIN-KEYWORD,blogspot
@@ -614,7 +620,6 @@ DOMAIN-KEYWORD,dropbox
 DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,github
 DOMAIN-KEYWORD,instagram
-DOMAIN-KEYWORD,porn
 DOMAIN-KEYWORD,twitter
 DOMAIN-KEYWORD,whatsapp
 DOMAIN-KEYWORD,google
@@ -638,7 +643,6 @@ DOMAIN-SUFFIX,fbsbx.com
 DOMAIN-SUFFIX,gcr.io
 DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,gosetsuden.jp
-DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gwtproject.org
 DOMAIN-SUFFIX,heroku.com
 DOMAIN-SUFFIX,html5rocks.com
